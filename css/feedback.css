@@ -1,0 +1,43 @@
+/* Optional custom styling on top of Bootstrap */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Card polish */
+.card {
+  border-radius: 16px;
+}
+
+/* Slightly larger tap targets for mobile */
+.form-check-input {
+  transform: scale(1.15);
+  margin-right: 6px;
+}
+
+/* Improve textarea resize behavior */
+textarea {
+  resize: vertical;
+}
+
+/* Smooth button hover */
+.btn-primary {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Small mobile adjustment */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+}
