@@ -1,9 +1,9 @@
-const RegisterBtn =document.getElementById('register-submit')
+const registerBtn =document.getElementById('register-submit')
 
 // console.log(UserName)
 
 
-RegisterBtn.addEventListener('submit',async(e)=>{
+registerBtn.addEventListener('submit', async(e)=>{
     e.preventDefault()
     const UserName= document.querySelector('#register-username').value
     const Password= document.querySelector('#register-password').value
