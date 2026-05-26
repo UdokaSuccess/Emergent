@@ -13,7 +13,9 @@ registerBtn.addEventListener('submit', async(e)=>{
         const res= await axios.post(" ",{
          UserName,
          Email,
-         Password
+         Password,
+         fullName,
+         dob
         })
 
         console.log(res.data)
