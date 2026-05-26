@@ -14,7 +14,8 @@ registerBtn.addEventListener('submit', async(e)=>{
          UserName,
          Email,
          Password,
-         fullName
+         fullName,
+         dob
         })
 
         console.log(res.data)
