@@ -27,7 +27,7 @@
       window.location.href = '../pages/login.html';
     } else {
       errorMsg.textContent = data.message || 'Signup failed';
-      console.log(response)
+      console.log(data)
     }
   }
     catch (err) {
