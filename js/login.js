@@ -15,8 +15,7 @@
       body: JSON.stringify({  userData, password})
     });
 
-    const data = await response.json();
-
+    const data = await response.json()
     if (data.code === '200') {
           localStorage.setItem('token', data.msg.token);
           localStorage.setItem('username', data.msg.username)
@@ -26,7 +25,6 @@
       window.location.href = '../pages/userDashboard.html';
     } else {
       errorMsg.textContent = data.message || 'Failed to login';
-      console.log(data)
     }
   }
     catch (err) {
