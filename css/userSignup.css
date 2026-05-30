@@ -37,16 +37,16 @@ body{
  }
  .form-container{
     flex-basis: 48%;
-    padding: 1rem 1rem ;
-    border: 2px solid;
+    padding: 1rem 4px;
+    /* border: 2px solid; */
  }
  .form{
-    margin-top: 1.2rem;
+    margin-top: 16px;
     padding: 12px;
  }
  .form input{
      border: 1.5px solid #000;
-     padding: 2px;
+     padding: 3px;
      margin: 12px 0;
  }
  .form label{
