@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Emergent/css/userSignup.css">
+    <link rel="stylesheet" href="../css/userSignup.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
    <h1><span>JOIN</span> <span class="title-h1">Emergent</span></h1>
    <sub>Your data is private and only used to help you in an emergency</sub>
 
-   <form class="form">
+   <form id="form">
         <label for="">First Name</label>
         <input type="text" name="firstname" id="firstname" required placeholder="Chidi">
 
@@ -48,9 +48,10 @@
         <input type="checkbox" name="" id=""> I agree to the <a href="#">Terms of Service and Privacy Policy</a>
 
      <button class="submit-btn">Create account</button>
+     <p id="errorMsg"></p>
 
    </form>
-      <p>Already have an account? <a href="/Emergent/pages/login.html">Login</a></p>
+      <p>Already have an account? <a href="./login.html">Login</a></p>
 
     </div>
 
@@ -78,6 +79,6 @@
 </section>
 
 
-    <script src="/Emergent/js/userSignup.js"></script>
+    <script src="../js/userSignup.js"></script>
 </body>
 </html>

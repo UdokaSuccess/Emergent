@@ -10,10 +10,10 @@ const BASE_URL = 'https://emegent.esbatech.org';
  const gender = document.getElementById('gender').value,
  const password= document.getElementById('password').value,
 
- const submit =  document.getElementById('firstname').value.trim(),
+ const form =  document.getElementById('form'),
+ const errorMsg = document.getElementById('errorMsg'),
 
-
-
+ 
  const signUp = async (arg) => {
     try {
     const response = await fetch(`${BASE_URL}/signup`, {
@@ -25,12 +25,19 @@ const BASE_URL = 'https://emegent.esbatech.org';
     const data = await response.json();
 
     if (response.ok) {
-      window.location.href = '/dashboard';
+      window.location.href = '/login.html';
     } else {
       errorMsg.textContent = data.message || 'Signup failed';
     }
-    } 
-    catch (error) {
-        
-    }
+  }
+    catch (err) {
+    errorMsg.textContent = 'Network error. Please try again.';
+  }
+
  }
+
+
+  form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  signup();
+});
