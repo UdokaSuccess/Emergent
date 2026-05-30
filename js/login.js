@@ -22,10 +22,11 @@
           localStorage.setItem('username', data.msg.username)
           localStorage.setItem('userId', data.msg.id);
           localStorage.setItem('tel', data.msg.tel);
+          
       window.location.href = '../pages/userDashboard.html';
     } else {
       errorMsg.textContent = data.message || 'Failed to login';
-      console.log(response)
+      console.log(data)
     }
   }
     catch (err) {
