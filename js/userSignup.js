@@ -6,8 +6,8 @@
  
  const signUp = async (arg) => {
   const firstname =  document.getElementById('firstname').value.trim();
- const middlename = document.getElementById('surname').value.trim();
- const  othername = document.getElementById('othernames').value.trim();
+ const surname = document.getElementById('surname').value.trim();
+ const middlename = document.getElementById('othernames').value.trim();
  const  username = document.getElementById('username').value.trim();
  const email = document.getElementById('email').value.trim();
  const tel = document.getElementById('phone').value.trim();
@@ -18,7 +18,7 @@
     const response = await fetch(`${BASE_URL}/signup.php`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstname, middlename, othername, username, email, tel, gender, password})
+      body: JSON.stringify({ firstname, middlename, surname, username, email, tel, gender, password})
     });
 
     const data = await response.json();
