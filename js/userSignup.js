@@ -24,7 +24,13 @@
     const data = await response.json();
 
     if (data.code === '200') {
-      window.location.href = '../pages/login.html';
+     errorMsg.style.color = 'green';
+     errorMsg.textContent = 'Account created successfully! Redirecting to login...'
+
+     setTimeout(() => {
+    window.location.href = '../pages/login.html';
+  }, 2000);
+
     } else {
       errorMsg.textContent = data.message || 'Signup failed';
       console.log(data)
@@ -35,7 +41,6 @@
   }
 
  }
-
 
   form.addEventListener('submit', (e) => {
   e.preventDefault();
