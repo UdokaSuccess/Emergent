@@ -18,13 +18,12 @@
 }
 body{
     background: #ffffff; 
-    font-size: large;  
     font-family:'Times New Roman', Times, serif;
 }
  .signup{
     display: flex;
-    justify-content: space-between;
-    width: 88%;
+    justify-content: center;
+    width: 84%;
     margin: 0 auto;
  }
  sub{
@@ -33,34 +32,52 @@ body{
  .title-h1{
     color: var(--primary-color);
     color: var(--lighter-purple);
-     font-style: italic;
+   font-style: italic;
 }
  .form-container{
     flex-basis: 48%;
-    padding: 1rem 4px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
  }
  #form{
-    margin-top: 16px;
-    padding: 12px
+    margin-top: 24px;  
  }
- .form input{
+ #form input{
      border: 1.5px solid #000;
      padding: 3px;
-     margin: 12px 0;
  }
- .form label{
+ .names{
+   margin: 24px 4px;
+   display: flex;
+   gap: 8px;
+   align-items: center;
+ }
+ #form label{
     font-weight: 600;
     text-transform: uppercase;
-    font-size: small
  }
  .submit-btn{
    width: 100%;
-   padding: 12px;
-    margin: 16px 0px;
-    background-color: var(--another-purple);
-    color: var(--white-shade);
-    border-radius: 4px;
-    font-size: 16px;
+   padding: 12px 0;
+   margin: 16px 0px;
+   background-color: var(--another-purple);
+   color: var(--white-shade);
+   border-radius: 4px;
+   font-size: 16px;
+ }
+
+/* -----For the login design that needs to be different -----*/
+.passwordlogin, #userData{
+   width: 100%;
+}
+
+.login-sidebar{
+   margin: 2.6rem 0;
+}
+
+/* Sign up page design continues */
+ #errorMsg{
+   color: red;
  }
 
  .signup-sidebar{
@@ -72,10 +89,11 @@ body{
     background-color: var(--another-purple);
     color: var(--white-shade);
     padding: 16px;
+    margin: 0;
  }
 
  .card{
     background-color: var(--another-darker-purple);
-    margin: 12px;
+    margin: 12px 0;
     padding: 4px 8px;
  }

@@ -3,38 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-    <title>Login</title>
+    <link rel="stylesheet" href="../css/userSignup.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container">
 
-            <form id="login-submit">
-                <h1 class="login_heading"><span class="login_underline">L</span>ogin</h1>
-                <div class="login_control">
-                    <label for="">Username</label>
-                    <input type="text" id="login-username" placeholder="Enter a Username">
-                </div>
-    
-    
-                <div class="login_control">
-                    <label for="">Password</label>
-                    <input type="password" name="password" placeholder="Password" id="login-password">
-                </div>
 
-                <div class="login_control">
-                    <button type="submit" class="login_btn">Login</button>
-                </div>
-            </form>
-            <div>
-                <p>Don't have an Account? <a href="register.html">Register</a></p>
-                <p>Return Home <a href="index.html">Home</a></p>
-            </div>
-        </div>
+<section class="signup">
+    <div class="form-container">
+        <sub></sub>
+   <h1><span>Log In</span> to <span class="title-h1">Emergent</span></h1>
+   <sub>Your data is private and only used to help you in an emergency</sub>
+
+   <form id="form">
+    <div class="names">
+       <label for="">Email</label> <sub>OR</sub> <Label>Username</Label>
+        <input type="text" name="firstname" id="userData" placeholder="Enter your email or username" required>
+    </div>  
+    <div class="names">     
+        <label for="">Password </label>
+        <input type="password" name="password" id="password" class="passwordlogin" placeholder="Enter your password">
     </div>
-    <script src="/js/login.js"></script>
+         <a href="#">Forgotten Password?</a>
+
+
+
+     <button class="submit-btn">Login</button>
+     <p id="errorMsg"></p>
+
+   </form>
+      <p>Don't have an account? <a href="./userSignup.html">Signup</a></p>
+
+    </div>
+
+
+    <div class="signup-sidebar" >
+  <div class="login-sidebar">
+    <sub>EMERGENT NG</sub>
+ <h1>EVERY<br> <span class="title-h1">Second</span> <br>COUNTS<br></h1>
+<sub> Sign in to access your emergency profile, saved hospitals and real-time blood availability in your area. </sub>
+  </div>
+
+  <div class="login-sidebar">
+       <div class="card">
+        <h3>Instant Hospital Matching</h3>
+        <sub>Ranked by capability and distance.</sub>
+       </div>
+       
+       <div class="card">
+        <h3>Your Emergency Profile</h3>
+        <sub>Saved medical info when it matters the most</sub>
+       </div>
+  </div>
+
+    </div>
+</section>
+
+
+    <script src="../js/userSignup.js"></script>
 </body>
 </html>
