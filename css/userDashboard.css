@@ -8,36 +8,15 @@ body{
 --lighter-purple: #7c3aed;  
 --another-purple: #4a0f9e; */
 
-.navbar {
-  background: var(--another-purple);
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 48px;
-  margin-top: 0;
-}
-
-.nav-brand {
-  color: #fff;
-}
-
-.nav-links {
-  display: flex;
-  gap: 24px;
-}
-
-.nav-links a {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 16px;
-}
-
-.nav-links a:hover {
-  color: #fff;
-}
-
-#logout-btn {
-  color: rgba(255, 180, 180, 0.9);
+#click-profile{
+  position: absolute;
+  top: 24%;
+  right: 0%;
+  padding: 0 16px;
+  z-index: 1;
+  box-shadow: 0 2px 12px rgba(63, 24, 124, 0.3);
+  background-color: #ede8f5;
+  transition: ease-in-out;
 }
 /* -----------------header--------------------- */
 .dashboard-header{

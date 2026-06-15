@@ -1,12 +1,52 @@
 :root {
   --primary-color: #51219e;
   --lighter-purple: #6d23e7;
-  --another-purple:  #3f187c;;
+  --another-purple:  #3f187c;
   --secondary-accent: #141116;
+  --very-light-ash-purple: #faf9fe;
   --gold-pop-color: #eaaa4f;
   --font-family: "Sora", sans-serif;
   --white-shade: #f0ecee;  
   --ash-gray-purple: #b09ec4;
   --another-darker-purple: #684e8f;
   --white-bg-shade: #ffffff;
+  
+}
+
+.navbar {
+  background: var(--another-purple);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.nav-brand {
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaaa4f;
+}
+
+#logout-btn {
+  color: rgba(255, 180, 180, 0.9);
+}
+
+.sub{
+  color: var(--ash-gray-purple);
 }
