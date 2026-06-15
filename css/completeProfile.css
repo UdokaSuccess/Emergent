@@ -1,0 +1,63 @@
+.medical-card{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;    
+}
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ash-gray-purple);
+  background-color: var(--another-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-shade);
+}
+ 
+.step-line {
+    flex: 1;
+  height: 2px;
+  background: #ddd;
+  min-width: 30px;
+}
+ h2{
+  color: var(--another-purple);
+ }
+
+.personal-info{
+  display: flex;
+  justify-content: space-between;
+  align-items:center
+}
+
+sub{
+    color: var(--ash-gray-purple);
+}
+
+.update-btn{
+   width: 100%;
+   padding: 10px 0;
+   margin: 16px 0px;
+   background-color: var(--another-purple);
+   color: var(--white-shade);
+   border-radius: 4px;
+   font-size: 16px;
+}
+.input{
+  padding: 6px 6rem;
+  border: 1px solid var(--primary-color);
+  margin: 4px;
+}

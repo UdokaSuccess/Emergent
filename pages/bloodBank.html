@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="../variables.css">
+    <title>Emergent NG Blood DB</title>
+    <!-- REMIX ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <header>
+      <nav class="header_nav">
+        <span class="main_logo">💧 Blood Donor DB</span>
+        <span class="nav_action_box">
+          <input
+            type="text"
+            name="search"
+            id="nav-btn"
+            placeholder="Enter City or Code"
+          />
+          <button class="nav_btn" id="nav-btn">search</button>
+        </span>
+      </nav>
+    </header> -->
+
+    <!-- Added new header. Commented the above so as to add hamburger functionality -->
+    <header class="header">
+      <p class="main-logo">💧 Blood Donor DB</p>
+     <nav>
+       <div class="hamburger js-ham-menu">
+         <span></span><span></span><span></span>
+       </div>
+       <div class="nav-container js-nav-container">
+       <!-- <ul>
+         <li><a href="" id="home-link">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#projects">projects</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul> -->
+       <div class="login-register-wrapper">
+        <a href="./pages/login.html">
+          <button class="login-btn">Login</button>
+         </a>
+         <a href="./pages/userSignup.html">
+           <button class="register-btn">Register</button>
+         </a>
+         <a href="./pages/feedback.html">
+          <button class="feedback-btn">Feedback</button>
+         </a>
+       </div>
+       
+     </div> 
+     </nav>
+   </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="filter-btype-wrapper">
+
+          <h2>Filters</h2>
+          <p class="blood-type-header">Blood Type</p>
+
+          <div class="blood-type-wrapper">
+            <span>
+              <input type="checkbox" name="" id="" />
+              A+
+            </span>
+            <span>
+              <input type="checkbox" name="" id="" />
+              O-
+            </span>
+            <span>
+              <input type="checkbox" name="" id="" />
+              B+
+            </span>
+          </div>
+        </div>
+
+        <div class="med-center-wrapper">
+          <!-- Contains the medical centers (city blood bank, downtown health center, red cross center). All generated in the main.js file-->
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <h2>About Us</h2>
+        <p class="about-section-content">
+          We connect hospitals with blood banks to ensure the availability of
+          blood types when needed.
+        </p>
+      </section>
+
+     <section class="about-section">
+        <h2>
+          <a href="pages/feedback.html">
+            Click here to give us feedback
+          </a>
+        </h2>
+      </section>
+
+    </main>
+
+    <footer>
+      <section class="footer-section">
+        <h2>Contact</h2>
+
+        <div class="footer-contact-detail">
+          <a href="">(123) 456-7890</a>
+        </div>
+
+        <div class="footer-mail-wrapper">
+          <a href="">info@bloodbankdb.com</a>
+        </div>
+
+        <!-- Social media icons and Back to top icon -->
+        <div class="footer-social-wrapper">
+          <a href="#" class="back-to-top"><i class="ri-arrow-up-circle-fill"></i></a>
+          <p>Follow Us</p>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </div>
+
+      </section>
+    </footer>
+    <div class="backdrop"></div> <!-- The low opacity background that appears when hamburger menu is clicked -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

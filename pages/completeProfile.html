@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/completeProfile.css">
+    <link rel="stylesheet" href="../variables.css">
+    <title>Emergent NG</title>
+</head>
+<body>
+   <nav class="navbar">
+  <a href="../index.html" class="nav-brand">EMERGENT NG</a>
+
+
+  <div class="nav-links">
+    <a href="./hospitals.html">Having an Emergency?</a>
+    <a href="./bloodBank.html">Blood Bank</a>
+    <a href="./bloodBank.html">Hospitals</a>
+    <a href="./completeProfile.html">Edit Profile</a>
+    <a href="../pages/login.html" id="logout-btn">Logout</a>
+  </div>
+</nav>
+
+<div class="medical-card">
+
+<div class="steps">
+  <div class="step">
+    <span class="step-num">1</span>
+    <span class="step-label">Personal info</span>
+  </div>
+  <div class="step-line"></div>
+  <div class="step">
+    <span class="step-num">2</span>
+    <span class="step-label">Medical details</span>
+  </div>
+  <div class="step-line"></div>
+  <div class="step">
+    <span class="step-num">3</span>
+    <span class="step-label">Emergency contact</span>
+  </div>
+</div>
+
+    <h1>Your <span>Medical</span> Card</h1>
+    <sub>This information will help medical staff treat you quickly in an emergency. It is only shared when you activate emergency search.</sub>
+       
+    <form action="">
+      <h2>Personal Info</h2>
+      <div class="personal-info">
+      <p>Name: Udoka Kasie</p>
+      <p>Phone number: 09111111111</p>
+      <p>Email: dummy@gmail.com</p>
+      <p>Gender: Male</p>
+      </div>
+
+      <div>
+        <label for=""> Date of Birth</label> <input type="date" name="" id="" class="input">
+         <label for="">State of Residence</label> <input type="text" name="" id="" placeholder="Enter your state" class="input">
+       </div>
+         <label for="">City of Residence</label> <input type="text" name="" id="" placeholder="Enter your city" class="input">
+
+        <h2>Medical Details</h2>
+
+         <label>Blood group</label>
+         <input type="radio" name="blood" id=""> O+
+         <input type="radio" name="blood" id=""> A+
+         <input type="radio" name="blood" id=""> B+
+         <input type="radio" name="blood" id=""> AB+
+
+         <input type="radio" name="blood" id=""> O-
+         <input type="radio" name="blood" id=""> A-
+         <input type="radio" name="blood" id=""> B-
+         <input type="radio" name="blood" id=""> AB-
+         <input type="radio" name="blood" id=""> I don't know
+
+
+         <div>
+         <label>Any Allergies</label>
+         <input type="text" name="" id="" placeholder="Enter your allergies" class="input">
+
+         <label>Any Medical Conditions</label>
+         <input type="text" name="" id="" placeholder="Hypertension, diabetes, asthma, etc" class="input">
+         </div>
+
+         <h2>Emergency Contact</h2>
+
+         <label for="">Contact Name</label>
+         <input type="text" class="input" placeholder="Adaeze Darasimi">
+
+         <label for="">Relationship</label>
+         <input type="text" class="input" placeholder="This person is your...">
+        
+         <div>
+         <label for="">Phone Number</label>
+         <input type="text" class="input" placeholder="08199999999">
+         </div>
+
+
+
+         <button class="update-btn">Update Profile</button>
+
+         
+      </form>
+
+</div>
+
+</body>
+</html>

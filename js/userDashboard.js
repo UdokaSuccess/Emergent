@@ -4,10 +4,21 @@
 const token = localStorage.getItem('token');
 const userId = localStorage.getItem('userId');
 const username = localStorage.getItem('username');
+const clickProfile = document.getElementById('click-profile')
+
+const completeProfile = localStorage.getItem('id')
 
 
 if (!token) {
   window.location.href = '../pages/login.html';
+}
+
+if(!completeProfile){
+  clickProfile.style.display = 'block'
+
+  setTimeout(() => {
+  clickProfile.style.display = 'none'
+}, 3000)
 }
 
 document.getElementById('username').textContent = username;
@@ -46,3 +57,7 @@ const populateDashboard = (user) => {
   const initials = `${user.firstname[0]}${user.lastname[0]}`.toUpperCase();
   document.getElementById('avatar').textContent = initials;
 }
+
+setTimeout(() => {
+  
+}, 3000);
