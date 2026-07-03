@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bloodbankdashboard.css">
+    <link rel="stylesheet" href="../variables.css">
+    <title>Emergent NG Bloodbank DashBoard</title>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="hospital-name">
+            <h3>City Hospital Blood Bank</h3>
+            <button>Logout</button>
+        </div>
+        <div class="hospital-prof-sum" id="hosp-prof">
+            <h3>Profile Summary</h3>
+            <p>Name: City Hospital</p>
+            <p>Address: 123 Health Ave, Wellness City</p>
+            <p>Contact Person: Dr. Sarah Thompson</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: sarahthompson@cityhospital.com</p>
+            <button id="edit-prof-btn">Edit</button>
+        </div>
+        <form id="edit-prof-sum" class="edit-prof-form">
+            <h4>Edit profile</h4>
+            <label for="name">Name: 
+                <input type="text" value="city-hospital">
+            </label>
+            <label for="address">Address:
+                <input type="text" name="address" placeholder="">
+            </label>
+            <label for="contact-person">
+                Contact-Person: <input type="text" name="contact-person">
+            </label>
+            <label for="phone">Phone: <input type="number" name="phone"></label>
+            <label for="email">Email: <input type="email"></label>
+            <button value="submit">Submit</button>
+        </form>
+
+        <!--blood-invent-->
+        <div class="blood-invent-container" id="blood-invent">
+            <div class="blood-invt-tab">
+                <h3>Blood Inventory</h3>
+                <div class="blood-invent-table-headings">
+                    <p>Blood type</p>
+                    <p>Stock Quantity</p>
+                    <p>Last Updated</p>
+                    <p>Actions</p>
+                </div>
+                <div class="blood-invent-rows">
+                    <p>A+</p>
+                    <p>15units</p>
+                    <p>2023-10-15</p>
+                    <button id="btn">Edit</button> 
+                </div>
+                <hr>
+                <div class="blood-invent-rows">
+                    <p>B+</p>
+                    <p>15units</p>
+                    <p>2023-10-15</p>
+                    <button>Edit</button> 
+                </div>
+                <hr>
+                <div class="blood-invent-rows">
+                    <p>AB+</p>
+                    <p>10units</p>
+                    <p>2023-10-17</p>
+                    <button>Edit</button> 
+                </div>
+                <hr>
+                <div class="blood-invent-rows">
+                    <p>O+</p>
+                    <p>15units</p>
+                    <p>2023-10-15</p>
+                    <button>Edit</button> 
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="blood-update-msg-container">
+            <div class="update-msg-symbol">!</div>
+            <p>Alert: Update your data today to keep your listing accurate</p>
+        </div>
+        <div class="blood-invent-form" id="blood-group-form">
+            <form action="" id="blood-group">
+                <h3>Edit Blood Inventory</h3>
+                <div class="edit-blood-invt-container">
+                    <p>Blood Type</p>
+                    <p>Stock Quantity</p>
+                    <p>New Date</p>
+                    <input type="text" value="A+"><input type="number"><input type="date">
+                    <button value="update">Update</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <script src="../js/bloodbankdashboard.js"></script>
+    
+</body>
+</html>
