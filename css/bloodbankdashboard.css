@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--ash-gray-purple);
+}
+.profile-container{
+    display: block;
+    background-color: rgb(236, 232, 232);
+    max-width: 90%;
+    margin-top: 36.5px;
+    margin-left: 5%;    
+
+}
+.hospital-name{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 20px;
+}
+.hospital-name h3{
+    font-weight: 900;
+}
+.hospital-name button{
+    padding: 0.4rem 0.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--lighter-purple);
+    color: white;
+}
+.hospital-prof-sum{
+    position: relative;
+    max-width: 95%;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+
+}
+.hospital-prof-sum h3, p, button{
+    margin-left: 40px;
+
+}
+.hospital-prof-sum h3{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.hospital-prof-sum p{
+    padding-top: 5px;
+    font-weight: 200;
+    color: var(--ash-gray-purple);
+}
+.hospital-prof-sum button{
+    background-color: var(--ash-gray-purple);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+
+    
+}
+.edit-prof-form{
+    display: none;
+    gap: 3px;
+    max-width: 30%;
+    margin-left: 30px;
+    
+}
+.edit-prof-form h4{
+    font-weight: 600;
+    padding-top: 10px; 
+}
+.edit-prof-form label, input{
+    color: var(--ash-gray-purple);
+}
+.edit-prof-form input{
+    padding: 3px 5px;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 0;
+    padding-top: 0px;
+    background: rgb(236, 232, 232);
+}
+.edit-prof-form button{
+    margin-top: 15px;
+    margin-left: 0;
+    max-width: 60px;
+    padding: 2%;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--ash-gray-purple);
+}
+
+.blood-invent-container{
+    display: block;
+    max-width: 95%;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 5px; 
+
+}
+.blood-invt-tab h3{
+    margin-left: 40px ;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 900;
+    
+}
+.blood-invent-table-headings{
+    display: grid;
+    position: relative;
+    max-width: 95%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    padding: 10px;
+    background-color:  rgb(236, 232, 232);
+}
+.blood-invent-rows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 95%;
+    margin-left: 30px;
+    padding: 4px;
+
+}
+.blood-invent-rows button{
+    width: 3rem;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+}
+.blood-invt-tab hr{
+    max-width: 95%;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+.blood-update-msg-container{
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 2%;
+}
+.update-msg-symbol{
+    background: red;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 12px;
+    color: white;
+}
+.blood-update-msg-container p{
+    margin-left: 10px;
+    font-size:13px;
+    font-weight: 600;
+}
+.blood-invent-form{
+    max-width: 70%;
+    background-color:  white;
+    margin-left: 40px;
+    display: none;
+
+}
+.blood-invent-form h3{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+
+}
+.blood-invent-form p{
+    margin-left: 30px;
+}
+.blood-invent-form input{
+    width: 50%;
+    gap: 2px;
+    margin-left: 15px;
+    
+    
+}
+.edit-blood-invt-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+.edit-blood-invt-container button{
+    width: 3rem;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 3px 4px;
+    background: var(--ash-gray-purple);
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* blood invent*/
+@media screen and (max-width: 470px){
+    .blood-invent-table-headings{
+        max-width: 100%;
+        margin-left:0;
+        padding-left: 0;
+        font-size: 10px;
+    }
+    .blood-invent-rows{
+        margin-left: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    .blood-invent-rows button{
+        width: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .blood-update-msg-container{
+        margin-left: 6px;
+    }
+    .blood-invent-form{
+        width: 100%;
+        margin-left: 0;
+    }
+    .blood-invent-form p, input{
+        margin-left: 0;
+
+    }
+}
+@media screen and (max-width: 350px){
+    .hospital-name{
+
+       
+    }
+    .hospital-prof-sum h3, p, button{
+        margin-left: 20px;
+    }
+    .blood-invt-tab h3{
+        margin-left: 20px;
+    }
+    .blood-invent-rows{
+        gap: 1px;
+
+    }
+    .blood-invent-rows p{
+        font-size: 0.75rem;
+    }
+}
+    
